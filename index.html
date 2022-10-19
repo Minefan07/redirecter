@@ -2,11 +2,11 @@
 <html>
 <body>
 <script>
-function go(url) {
-  alert('Going to "' + url + '"')
-  window.location.href(url);
+function go() {
+  alert('Going to "' + document.getElementById("link").innerHTML + '"')
+  window.location.href(document.getElementById("link").innerHTML);
 }
 </script>
-<input id='link' placeholder='Type your link here:'><button id='submit' onclick='go(document.getElementById("link").innerHTML)'>Go</button> 
+<input id='link' placeholder='Type your link here:'><button id='submit' onclick='go()'>Go</button> 
 </body>
 </html>
